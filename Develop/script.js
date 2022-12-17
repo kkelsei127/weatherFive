@@ -68,12 +68,19 @@ function getCity(){
 	var city = document.getElementById('search-input');
 	var targetedCity = document.getElementById('targetedCity');
 	targetedCity.innerHTML = "Now viewing weather for " + city.value + " "
-}
+
 
 fetch("https://api.openweathermap.org/data/2.5/forecast?q='+city.value+'&appid=5db7c0600e5ee725bab03bf015c8d275")
 .then(response => response.json())
 .then(data =>{
 	for(i = 0; i < 5; i++){
-		document.getElementById
+		document.getElementById("day"+ (i+1) +'min').innerHTML ="Minimum Temperature: " +Number(data.list[i].main.temp_min - 288.53).toFixed(1) +'°';
+	}
+	for(i = 0; i < 5; i++){
+		document.getElementById("day"+ (i+1) +'max').innerHTML ="Maximum Temperature: " +Number(data.list[i].main.temp_max - 288.53).toFixed(1) +'°';
+	}
+	for(i = 0; i < 5; i++){
+		document.getElementById("image" + (i+1)).src = "https://openweathermap.org/img/wn/" + data.list[i].weather[0].icon+".png";
 	}
 })
+}
