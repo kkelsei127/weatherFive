@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <aside>
+            <div id="aside-header">
+                <h2>Search for a city</h2>
+                <form id="search-form">
+                    <input
+                        id="search-input"
+                        type="text"
+                        placeholder="Search a city!"
+                    />
+                    <button class="searchButton">Click me!</button>
+                </form>
+            </div>
+            <div id ="search-container">
+                <div id="searchResult1">search 1</div>
+                <div id="searchResult2">search 2</div>
+                <div id="searchResult3">search 3</div>
+            </div>
+        </aside>
+        <div>
+            <!-- search container here-->
+        </div>
+        <div>
+            <div>
+                <h3 id="targetedCity">Now viewing weather for: No City Selected</h3>
+                <!--targeted city here-->
+            </div>
+            <div>
+                <!--city info here-->
+            </div>
+            <div>
+                <!--city info here-->
+            </div>
+            <div>
+                <!--city info here-->
+            </div>
+        </div>
+        <div id="fiveDayContainer">
+            <div id="imageContainer">
+                <div class="images">
+                    <p id="day1" class="weatherForecast"></p>
+                    <div class="image"><img src="assets" class="imageClass" id="image1" alt=""></div>
+                    <p class="minimumTemp" id="day1min">minimum temp here</p>
+                    <p class="maximumTemp" id="day1max">maximum temp here</p>
+                </div>
+                <div class="images">
+                    <p id="day2" class="weatherForecast"></p>
+                    <div class="image"><img src="assets" class="imageClass" id="image2" alt=""></div>
+                    <p class="minimumTemp" id="day2min">minimum temp here</p>
+                    <p class="maximumTemp" id="day2max">maximum temp here</p>
+                </div>
+                <div class="images">
+                    <p id="day3" class="weatherForecast"></p>
+                    <div class="image"><img src="assets" class="imageClass" id="image3" alt=""></div>
+                    <p class="minimumTemp" id="day3min">minimum temp here</p>
+                    <p class="maximumTemp" id="day3max">maximum temp here</p>
+                </div>
+                <div class="images">
+                    <p id="day4" class="weatherForecast"></p>
+                    <div class="image"><img src="assets" class="imageClass" id="image4" alt=""></div>
+                    <p class="minimumTemp" id="day4min">minimum temp here</p>
+                    <p class="maximumTemp" id="day4max">maximum temp here</p>
+                </div>
+                <div class="images">
+                    <p id="day5" class="weatherForecast"></p>
+                    <div class="image"><img src="assets" class="imageClass" id="image5" alt=""></div>
+                    <p class="minimumTemp" id="day5min">minimum temp here</p>
+                    <p class="maximumTemp" id="day5max">maximum temp here</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./Develop/script.js"></script>
+</body>
+</html>
