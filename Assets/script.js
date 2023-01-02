@@ -22,7 +22,7 @@ function callApi(){
 
 		for (let i = 4; i < data.list.length; i+=8) {
 			console.log(data.list[i])
-			timeSlot += "<div class='col-md-3 text-center'><div class='alert alert-primary'>"
+			timeSlot += "<div class='col-sm text-center'><div class='alert alert-danger'>"
 			timeSlot += data.list[i].dt_txt.split(' ')[0] + "<br/>"
 			timeSlot += `<img src="http://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png"/>`
 			timeSlot += data.list[i].main.temp+"&deg;F<br/>"
@@ -74,6 +74,8 @@ function callApi(){
 			button.setAttribute('data-index', i);
 			button.addEventListener('click', function(){
 				var cityText = search;
+				console.log(cityText)
+				console.log(search)
 				var api = "https://api.openweathermap.org/data/2.5/forecast?q=";
 				var apiKey = "&appid=5db7c0600e5ee725bab03bf015c8d275&units=imperial";
 				//this makes the api link based off users input
@@ -86,7 +88,7 @@ function callApi(){
 			
 					for (let i = 4; i < data.list.length; i+=8) {
 						console.log(data.list[i])
-						timeSlot += "<div class='col-md-3 text-center'><div class='alert alert-primary'>"
+						timeSlot += "<div class='col-sm text-center'><div class='alert alert-danger'>"
 						timeSlot += data.list[i].dt_txt.split(' ')[0] + "<br/>"
 						timeSlot += `<img src="http://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png"/>`
 						timeSlot += data.list[i].main.temp+"&deg;F<br/>"
@@ -112,7 +114,7 @@ function callApi(){
 				searches = storedSearches;
 			}
 		
-			renderSearches();
+			// renderSearches();
 		}
 		function storedSearches() {
 			//stringify and set key in localStorage to searches array

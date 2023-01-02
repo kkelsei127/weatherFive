@@ -1,0 +1,32 @@
+body{
+    background-color: #d5ad95;
+    color:#ce893a;
+}
+
+.citySearch{
+    padding-left:20px;
+    color:#923723;
+}
+
+.searchContainer{
+    background-color: #daa093;
+    width: fit-content;
+    padding: 0 10px;
+    border-style: solid;
+    height: fit-content;
+    border-color:rgb(209, 161, 130);
+    color: #923723;
+}
+
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./Images/WeatherFiveHero.jpg");
+    background-size: cover;
+    background-position: center;
+    border-style:solid;
+    border-top:#daa093;
+    border-left:#daa093;
+    border-right: #daa093;;
+}
