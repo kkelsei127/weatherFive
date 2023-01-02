@@ -29,7 +29,7 @@ THEN I am again presented with current and future conditions for that city
 
 ## Screenshots
 
-![The following image shows the completed layout.](./Assets/Screenshot%202022-12-20%20163409.png)
+![The following image shows the completed layout.](./Assets/Images/Screenshot%202023-01-02%20140637.png)
 
 
 ## Link to deployed site
@@ -37,4 +37,4 @@ https://kkelsei127.github.io/weatherFive/
 
 ## License
 
-No Licenses were used
+Unsplash License
