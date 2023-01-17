@@ -27,6 +27,9 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
+## Usages
+Type in the city you want to search to view the weather for the next five days. Can't remember your previous search? On the aside to the left is the previous search history, click on a previous search to revisit it.
+
 ## Screenshots
 
 ![The following image shows the completed layout.](./Assets/Images/Screenshot%202023-01-02%20140637.png)
