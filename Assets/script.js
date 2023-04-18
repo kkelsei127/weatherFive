@@ -64,10 +64,12 @@ function callApi(){
 	function renderSearches() {
 		// clear searchList element
 		searchList.innerHTML = '';
-	
+		let newSearches = [...new Set(searches)];
+			
+		for (var i = 0; i < newSearches.length; i++) {
+			var search = newSearches[i];
+
 		//render a new button for each search added
-		for (var i = 0; i < searches.length; i++) {
-			var search = searches[i];
 	
 			var button = document.createElement('button');
 			button.textContent = search;
